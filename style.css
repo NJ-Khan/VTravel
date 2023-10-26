@@ -325,7 +325,7 @@ a:hover,
 }
 
 .parallax.img1 {
-    background-image: url('Banner-3res.png');
+    background-image: url('Banner-3res.jpg');
     height: 100%;
 }
 
@@ -380,7 +380,7 @@ a:hover,
 
 /* Testimonial VISA CSS -----------------------------------------------------------------*/
 .visa .parallax.img1 {
-    background-image: url('Banner-visares.png');
+    background-image: url('Banner-visares.jpg');
     height: 100%;
 }
 .testimonial-wrapper h2 {
@@ -571,7 +571,7 @@ background-color: var(--white-color);
 About Page CSS 
 ===========================================================================================================================================*/
 .about .parallax.img1 {
-    background-image: url('Banner-aboutusres.png');
+    background-image: url('Banner-aboutusres.jpg');
     height: 100%;
 }
 .about .parallax.img2{
@@ -787,7 +787,7 @@ Contact Page CSS
 ====================================== */
 
 .contact .parallax.img1 {
-    background-image: url('Banner-contactusres.png');
+    background-image: url('Banner-contactusres.jpg');
     height: 100%;
 }
 .contact .get-in-touch .card {
