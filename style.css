@@ -575,7 +575,7 @@ About Page CSS
     height: 100%;
 }
 .about .parallax.img2{
-    background-image: url('../images/Services/5v.png');
+    background-image: url('5v.png');
 }
 
 .whoarewe{
