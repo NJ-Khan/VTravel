@@ -327,26 +327,36 @@ a:hover,
 .parallax.img1 {
     background-image: url('Banner-3res.jpg');
     height: 100%;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 .parallax.img2 {
     background-image: url('1.png');
     height: 608px;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 .parallax.img3 {
     background-image: url('2.png');
     height: 608px;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 .parallax.img4 {
     background-image: url('3.png');
     height: 608px;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 .parallax.img5 {
     background-image: url('4.png');
     height: 608px;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 /* services About CSS */
