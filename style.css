@@ -325,27 +325,27 @@ a:hover,
 }
 
 .parallax.img1 {
-    background-image: url('../images/banner/Banner-3.png');
+    background-image: url('Banner-3.png');
     height: 100%;
 }
 
 .parallax.img2 {
-    background-image: url('../images/Services/1.png');
+    background-image: url('1.png');
     height: 608px;
 }
 
 .parallax.img3 {
-    background-image: url('../images/Services/2.png');
+    background-image: url('2.png');
     height: 608px;
 }
 
 .parallax.img4 {
-    background-image: url('../images/Services/3.png');
+    background-image: url('3.png');
     height: 608px;
 }
 
 .parallax.img5 {
-    background-image: url('../images/Services/4.png');
+    background-image: url('4.png');
     height: 608px;
 }
 
@@ -380,7 +380,7 @@ a:hover,
 
 /* Testimonial VISA CSS -----------------------------------------------------------------*/
 .visa .parallax.img1 {
-    background-image: url('../images/banner/Banner-visa.png');
+    background-image: url('Banner-visa.png');
     height: 100%;
 }
 .testimonial-wrapper h2 {
@@ -441,7 +441,7 @@ background-color: #f6f9fc;
 
 /* Flight Tickets Starts Swiper ------------------------------------Flight HTML---------------------------------------- */
 .flight .parallax.img1 {
-    background-image: url('../images/banner/Banner-fticket.jpg');
+    background-image: url('Banner-fticket.jpg');
     height: 100%;
 }
 .swiper_wrapper{
@@ -552,7 +552,7 @@ background-color: var(--white-color);
 
 /*8 Gallery PAGE ========================================================================== */
 .gallery .parallax.img1 {
-    background-image: url('../images/banner/Banner-gallery.jpg');
+    background-image: url('Banner-gallery.jpg');
     height: 100%;
 }
 .gallery_wrapper{
@@ -571,7 +571,7 @@ background-color: var(--white-color);
 About Page CSS 
 ===========================================================================================================================================*/
 .about .parallax.img1 {
-    background-image: url('../images/banner/Banner-aboutus.png');
+    background-image: url('Banner-aboutus.png');
     height: 100%;
 }
 .about .parallax.img2{
@@ -656,7 +656,7 @@ About Page CSS
 
 /*---------------------------Consultancy fiiling forms cards-------------------------------*/
 .consultancy .parallax.img1 {
-    background-image: url('../images/banner/Banner-Ecosultancy.jpg');
+    background-image: url('Banner-Ecosultancy.jpg');
     height: 100%;
 }
 .consultancy_Wraper .card_content {
@@ -787,7 +787,7 @@ Contact Page CSS
 ====================================== */
 
 .contact .parallax.img1 {
-    background-image: url('../images/banner/Banner-contactus.png');
+    background-image: url('Banner-contactus.png');
     height: 100%;
 }
 .contact .get-in-touch .card {
