@@ -283,7 +283,8 @@ a:hover,
 /* parallax-effetct ------IMPORTANT*/
 
 .parallax {
-    position: relative;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
     background-position: left;
     background-size: 48%;
     background-repeat: no-repeat;
@@ -301,7 +302,8 @@ a:hover,
 }
 
 .parallax-1 {
-    position: relative;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
     background-position: right;
     background-size: 48%;
     background-repeat: no-repeat;
@@ -313,7 +315,8 @@ a:hover,
 }
 
 .parallax-main {
-    position: relative;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
