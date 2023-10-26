@@ -1,0 +1,853 @@
+/* General CSS  this is font family*/ 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+:root {
+
+    /* Text Colors */
+    --primary-color: #EBB02D;
+    --secondary-color: #014EBC;
+    --light-pink-color: #FFFCF8;
+    --light-color: #CCCCCC;
+    --black-color: #072541;
+    --white-color: #fff;
+    --box-shadow: 0.1rem -0.07rem 1.5rem 0.3rem rgb(0 0 0 / 26%);
+
+    /* font-family */
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: .975rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: white
+}
+body,
+html {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--black-color);
+    font-size: 5.5rem;
+    font-weight: 800;
+    font-family: var(--secondary-font);
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+h2 span {
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: var(--secondary-font);
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: var(--secondary-font);
+    color: var(--black-color);
+    margin-bottom: 2rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    margin-bottom: 0.9375rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    color: var(--white-color);
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+.btn:focus {
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.bg-black {
+    background-color: var(--black-color);
+}
+
+.main-btn {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    text-transform: capitalize;
+    padding: 0.9rem 3rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    transition: all .3s linear;
+    box-shadow: 0 0.063rem 0.4rem rgba(0, 0, 0, .3);
+}
+
+.main-btn:hover {
+    background: var(--black-color);
+    color: var(--white-color);
+    border: 2px solid var(--primary-color);
+}
+
+.view-link {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.view-link:hover {
+    color: var(--primary-color);
+    font-size: 1.9rem;
+}
+
+.wrapper {
+    padding: 7rem 0;
+}
+
+.sec-title h1 {
+    position: relative;
+}
+
+.sec-title h1::after {
+    position: absolute;
+    content: '';
+    background-color: var(--primary-color);
+    width: 50%;
+    height: 50%;
+    right: -0.4rem;
+    bottom: 0%;
+    opacity: 0.5;
+}
+
+/* 01 navbar css */
+
+.header {
+    background-color: var(--black-color);
+    padding: 1rem 0;
+}
+
+.header .navbar-brand img {
+    width: 20rem;
+    height: auto;
+    object-fit: cover; 
+}
+
+.header .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+}
+.navbar.header-scrolled{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background-color:var(--bg-white);
+    box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
+    transition:0.3s ease-in-out;
+}
+
+/* dropdown menu */ 
+.header .dropdown-menu {
+    min-width: 13rem;
+    padding: 1.5rem 0;
+    background-color: var(--black-color);
+    border: 0.2rem solid var(--primary-color);
+}
+
+.header .dropdown-item {
+    line-height: 1.3;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    font-weight: 600;
+    font-family: var(--secondary-font);
+}
+
+.header .dropdown-toggle::after {
+    content: "+";
+    border: none;
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+
+.header .nav-item:hover>.dropdown-toggle::after,
+.header .nav-link.dropdown-toggle.show {
+    color: var(--primary-color);
+}
+
+.header .dropdown-item:focus,
+.header .dropdown-item:hover,
+.header .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+    background-color: transparent; /*Not white background effect on dropdown menue*/
+}
+
+.header .navbar-nav li:hover>ul.dropdown-menu {
+    display: block; /*without click the drop down will work on hover*/
+}
+
+.header .navbar-toggler {
+    color: var(--white-color);
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+}
+
+.header .navbar-toggler:focus {
+    outline: none; /*when the toggler is shown the border of its have white color so we removed that box style*/
+    box-shadow: none;
+}
+
+/*  Banner Section */
+.banner-wrapper {
+    margin-top: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+}
+.banner-wrapper h2
+{
+    color:var(--primary-color);
+}
+.banner-wrapper p{
+    color: #04182b;
+}
+/* parallax-effetct ------IMPORTANT*/
+
+.parallax {
+    position: relative;
+    background-position: left;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.parallax p {
+    color: var(--white-color);
+}
+.parallax h4, h3 {
+    color: var(--primary-color);
+}
+
+.parallax-1 {
+    position: relative;
+    background-position: right;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-main {
+    position: relative;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax.img1 {
+    background-image: url('../images/banner/Banner-3.png');
+    height: 100%;
+}
+
+.parallax.img2 {
+    background-image: url('../images/Services/1.png');
+    height: 608px;
+}
+
+.parallax.img3 {
+    background-image: url('../images/Services/2.png');
+    height: 608px;
+}
+
+.parallax.img4 {
+    background-image: url('../images/Services/3.png');
+    height: 608px;
+}
+
+.parallax.img5 {
+    background-image: url('../images/Services/4.png');
+    height: 608px;
+}
+
+/* services About CSS */
+.main-wrapper {
+    margin-top: 80vh;
+    background-color: var(--white-color);
+    width: 100%;
+}
+.main-wrapper .black-card {
+    position: absolute;
+    top: 25%;
+    left: -400px;
+    width: calc(100% - 20%);
+    box-shadow: var(--box-shadow);
+    border-radius: 2.5rem;
+    background-color: var(--black-color);
+    padding: 2.5rem;
+    text-align: left;
+    z-index: 1;
+}
+
+.main-wrapper .black-card.right {
+    right: -400px;
+    left: unset;
+}
+
+/* Work CSS */
+.work-wrapper {
+    background: var(--black-color);
+}
+
+/* Testimonial VISA CSS -----------------------------------------------------------------*/
+.visa .parallax.img1 {
+    background-image: url('../images/banner/Banner-visa.png');
+    height: 100%;
+}
+.testimonial-wrapper h2 {
+    color: var(--black-color);
+}
+
+.testimonial-wrapper .card {
+    border: none;
+    background-color: var(--light-pink-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 4rem 2rem;
+}
+
+.testimonial-wrapper .card i {
+    color: rgb(255, 191, 0);
+    font-size: 1.4rem;
+}
+
+.testimonial-wrapper .card p {
+    color: var(--black-color);
+}
+
+.testimonial-wrapper .card h5 {
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.testimonial-wrapper .carousel-indicators {
+    margin-bottom: -3rem;
+}
+
+.testimonial-wrapper .carousel-indicators button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--black-color);
+}
+  
+/*9 VISA Testimonial *************************************************************************************************/
+
+.testimonial_wrapper .card{
+    padding: 0;
+}
+.testimonial_wrapper .dubaidesign{
+background-color: #f6f9fc;
+}
+.testimonial_wrapper .pakdesign{
+    background-color: #fff5d6;
+}
+.testimonial_wrapper .visa:hover{
+    -webkit-transform:translateY(-0.625rem);
+    transform:translateY(-0.625rem);
+    cursor: cell;
+    box-shadow: 0 0.9375rem 1.975rem var(--primary-color);
+}
+
+/* Flight Tickets Starts Swiper ------------------------------------Flight HTML---------------------------------------- */
+.flight .parallax.img1 {
+    background-image: url('../images/banner/Banner-fticket.jpg');
+    height: 100%;
+}
+.swiper_wrapper{
+    padding: 6rem;
+}
+.swiper_wrapper .card{
+    background-color: var(--black-color);
+    padding: 0;
+    border: 0;
+
+ }
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem; 
+ }
+.card-image .card-img{
+    object-fit: cover;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white-color);
+}
+.description{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-align: center;
+}
+.button:hover{
+background-color: var(--white-color);
+}
+.swiper-navBtn{
+    transition: color 0.3s ease;
+    --swiper-theme-color:var(--bg-white);
+}
+.swiper-navBtn:hover{
+    color: var(--white-color);
+}
+.swiper-pagination-bullet{
+    --swiper-theme-color:var(--primary-color);
+}
+.swiper-pagination-bullet-active{
+    --swiper-theme-color:var(--white-color);
+}
+/* Footer CSS -----------------------------------------------------------------------------------------------*/
+
+.footer_wrapper {
+    background-color: var(--black-color);
+    padding-bottom: 0rem;
+}
+
+.footer_wrapper .footer-logo img {
+    width: 25rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer_wrapper h5 {
+    color: var(--white-color);
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.footer_wrapper h5 a {
+    color: var(--white-color);
+}
+
+.footer_wrapper ul {
+    list-style: none;
+    display: flex;
+    /*flex means alignment in a row*/
+    align-items: center;
+}
+
+
+.footer_wrapper ul li {
+    margin-right: 1.5rem;  
+}
+
+.footer_wrapper .copyright-section p {
+    margin: 0;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+
+/* whatsapp intgration */
+.whatsapp-icon {
+    position: relative;
+}
+
+.whatsapp-icon .whatsapp {
+    position: fixed;
+    width: 6rem;
+    z-index: 1;
+    bottom: 1rem;
+    right: 0.5rem;
+}
+
+.whatsapp-icon .whatsapp img {
+    width: 5.5rem;
+
+}
+
+/*8 Gallery PAGE ========================================================================== */
+.gallery .parallax.img1 {
+    background-image: url('../images/banner/Banner-gallery.jpg');
+    height: 100%;
+}
+.gallery_wrapper{
+    background-color: var(--black-color);
+}
+.gallery_wrapper img{
+    border-radius: .9375rem;
+}
+.gallery_wrapper img:hover{
+    transition: transform .5s ease;
+    transform: scale(0.950);
+    box-shadow: 0 0.6375rem .675rem hsl(43, 100%, 65%);
+}
+
+/* ========================================================================================================================================
+About Page CSS 
+===========================================================================================================================================*/
+.about .parallax.img1 {
+    background-image: url('../images/banner/Banner-aboutus.png');
+    height: 100%;
+}
+.about .parallax.img2{
+    background-image: url('../images/Services/5v.png');
+}
+
+.whoarewe{
+    background-color: var(--black-color);
+}
+.whoarewe .img-fluid{
+    background-color: var(--primary-color);
+}
+.about .abilities-wrapper ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .abilities-wrapper h3 {
+    color: var(--black-color);
+}
+
+.about .abilities-wrapper ul li p {
+    color: var(--black-color)
+}
+
+
+
+/*7 About us page --------------------------Team Section ---------------------------------------*/
+.about .team_wrapper .card{
+    box-shadow: 3.5084rem 4.1419rem 1.5rem 0 rgb(0 0 0 / 8%);
+    padding: 3.6875rem;
+    -webkit-transition:all .4s;
+    transition:all .4s;
+    border: 0;
+    margin: 2rem;
+}
+.about .team_wrapper .card:hover{
+    -webkit-transform:translateY(-0.625rem);
+    transform:translateY(-0.625rem);
+    background-color: var(--black-color);
+    cursor: cell;
+    box-shadow: 0 0.6375rem .675rem var(--primary-color);
+}
+.about .team_wrapper .team-img{
+    margin:0 auto;
+}
+.about .team_wrapper .team-info .social-network{
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    padding:.925rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .team_wrapper .team-info .social-network li a {
+    width: 3.5625rem;
+    height: 3.5625rem;
+    line-height: 1.5625rem;
+    display: block;
+    border-radius: .3125rem;
+    margin: 0 .3125rem;
+    font-size: .75rem;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    font-size: 2rem;
+}
+.about .team_wrapper .team-info .social-network li a:hover{
+    color: var(--primary-color);
+} 
+.about .team_wrapper .team-info h5, p {
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/*---------------------------Consultancy fiiling forms cards-------------------------------*/
+.consultancy .parallax.img1 {
+    background-image: url('../images/banner/Banner-Ecosultancy.jpg');
+    height: 100%;
+}
+.consultancy_Wraper .card_content {
+    margin: 18px 18px 18px 0;
+    max-height: auto;
+    text-align: center;
+    padding: 3rem;
+}
+.consultancy_Wraper .card:hover {
+    box-shadow: 0 0.6375rem .675rem #04182b;
+    cursor: cell;
+}
+.consultancy_Wraper .main,
+.form_Wraper .main{
+    margin-left: 5rem;
+
+}
+.card_content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .card_content::-webkit-scrollbar-track {
+    box-shadow: 0;
+    border-radius: 0;
+  }
+  
+  .card_content::-webkit-scrollbar-thumb {
+    background: #FFCD4B;
+    border-radius: 15px;
+  }
+  
+  .card_title {
+    position: relative;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .card_title::after {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c89b3f;
+    content: "";
+  }
+  
+  hr {
+    margin: 24px auto;
+    width: 50px;
+    border-top: 2px solid #c89b3f;
+  }
+  
+  .card_text p {
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+.cards {
+   
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 5rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .card_image {
+    position: relative;
+    max-height: 200px;
+  }
+  
+  .card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card_price {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 0.25rem;
+    background-color: #c89b3f;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+.form_Wraper .card_content {
+    position: relative;
+    padding: 16px 12px 32px 24px;
+    margin: 16px 8px 8px 0;
+    max-height: 290px;
+    overflow-y: scroll;
+}
+
+
+
+/* ====================================
+Contact Page CSS
+====================================== */
+
+.contact .parallax.img1 {
+    background-image: url('../images/banner/Banner-contactus.png');
+    height: 100%;
+}
+.contact .get-in-touch .card {
+    min-height: 36rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    /* box-shadow: var(--box-shadow); */
+    text-align: center;
+     box-shadow: 3.5084rem 4.1419rem 1.5rem 0 rgb(0 0 0 / 8%); 
+    -webkit-transition:all .4s;
+    transition:all .4s;
+
+}
+.contact .get-in-touch  .card:hover{
+    -webkit-transform:translateY(-0.625rem);
+    transform:translateY(-0.625rem);
+    background-color: var(--black-color);
+    cursor: cell;
+    box-shadow: 0 0.6375rem .675rem var(--primary-color);
+    color: var(--primary-color)
+}
+
+.contact .card i {
+    font-size: 8rem;
+    margin-bottom: 3rem;
+}
+
+.contact .card h4 {
+    font-weight: 800;
+}
+
+.contact .card p {
+    color: var(--black-color);
+}
+
+.contact .card p:last-child {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.form-section {
+    padding: 10rem;
+    background-color: var(--black-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+}
+
+.form-section .form-control:focus {
+    box-shadow: none;
+    border-color: var(--light-color);
+
+}
+
+.form-section input.form-control {
+    height: 4.5rem;
+    border: 0.1rem solid var(--light-color);
+    font-size: 1.5rem;
+}
+
+.form-section textarea {
+    border: 0.1rem solid var(--light-color);
+    font-size: 1.5rem;
+}
